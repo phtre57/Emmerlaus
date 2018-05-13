@@ -1,16 +1,18 @@
 package BackEnd;
 
+import java.util.ArrayList;
+
 public class Player
 {
 
     private String name;
     private int healthPoint;
-    private Array<Card> CardsInHands;
-    private Array<Card> CardsOnTable;
+    private ArrayList<Card> CardsInHands;
+    private ArrayList<Card> CardsOnTable;
 
 
 
-    public Player(String name, int healthPoint, Array<Card> cardsInHands, Array<Card> cardsOnTable) {
+    public Player(String name, int healthPoint, ArrayList<Card> cardsInHands, ArrayList<Card> cardsOnTable) {
         this.name = name;
         this.healthPoint = healthPoint;
         CardsInHands = cardsInHands;
@@ -33,19 +35,19 @@ public class Player
         this.healthPoint = healthPoint;
     }
 
-    public Array<Card> getCardsInHands() {
+    public ArrayList<Card> getCardsInHands() {
         return CardsInHands;
     }
 
-    public void setCardsInHands(Array<Card> cardsInHands) {
+    public void setCardsInHands(ArrayList<Card> cardsInHands) {
         CardsInHands = cardsInHands;
     }
 
-    public Array<Card> getCardsOnTable() {
+    public ArrayList<Card> getCardsOnTable() {
         return CardsOnTable;
     }
 
-    public void setCardsOnTable(Array<Card> cardsOnTable) {
+    public void setCardsOnTable(ArrayList<Card> cardsOnTable) {
         CardsOnTable = cardsOnTable;
     }
 

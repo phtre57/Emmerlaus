@@ -3,23 +3,32 @@ package BackEnd;
 public class Card
 {
 
-    public  enum Dice {
-        4,6,8,12,20,100
+
+    static class CancellationValue{
+    	 public static final int zero = 0;
+    	 public static final int one = 1;
+    	 public static final int two = 2;
     }
-    
-    public enum CancellationValue{
-    	 0,1,2
-    }
+
     
     public enum ResistType{
-    	"noResist" , "halfResist" , "normalResist"
+    	noResist , halfResist , normalResist;
     }
     
 
-    private ResistType Resist;
+    private ResistType resist;
     private CancellationValue Cancellation;
     private boolean isMirror;
-    private Dice dice;
     private String cardDescription;
+    private Dice cardDice;
+
+    public Card(ResistType resist, boolean isMirror, Dice cardDice, String description){
+        this.resist = resist;
+        this.isMirror = isMirror;
+        this.cardDescription = description;
+        this.cardDice = cardDice;
+    }
+
+
     
 }
