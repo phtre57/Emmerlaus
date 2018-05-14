@@ -8,5 +8,6 @@ public class test
         Dice dice = new Dice(12);
         int number = dice.throwDice();
         System.out.println(number);
+        
     }
 }
