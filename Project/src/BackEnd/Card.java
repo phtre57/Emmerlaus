@@ -1,5 +1,7 @@
 package BackEnd;
 
+import java.util.ArrayList;
+
 public class Card
 {
 
@@ -45,12 +47,10 @@ public class Card
 	 */
 	private String cardDescription;
 	
-	
-	/*
-	 *  A repenser car il a des carte qui ont plusieurs des.  Et d'autre cartes qui ont exemple 6D12 so... a voirr...
-	 * 
-	 * */
-	private Dice cardDice;
+	/**
+	 * Array of dice for damage,healing,etc.
+	 */
+	private ArrayList<Dice> cardDice;
 	 
 
 
